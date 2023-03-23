@@ -1,0 +1,40 @@
+
+/*
+  * Inject styles to tailwind base layer
+*/
+@layer base {
+
+  /**
+    * DO NOT ADD SHARED STYLES IN HERE
+  */
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    /*font-size: 50%;*/
+    line-height: 1.2;
+  }
+
+  body {
+    @apply text-blue-900;
+  }
+
+  .container {
+    @apply ml-auto mr-auto px-8 xl:px-0;
+  }
+
+  .grid {
+    @apply gap-y-12 py-5 sm:gap-12;
+  }
+
+  .carousel-container {
+    height: 400px !important;
+  }
+
+}
